@@ -1,0 +1,74 @@
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  min-height: calc(100vh - 70px); /* Page height ke hisaab se */
+  background: #1e1e2f; /* Dark navy/charcoal */
+  color: #110f0f;
+  position: relative; /* Fixed hataya */
+  top: 0; /* Navbar ke niche align automatically */
+  left: 0;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  overflow-y: auto; /* Agar sidebar ka content bada ho to apna scroll lega */
+}
+
+/* Sidebar Logo */
+.sidebar-logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #00b4ff;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each menu item wrapped in a box */
+.sidebar-menu li {
+  margin: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden; /* For border radius on shadow */
+}
+
+/* Glow effect on hover for the box */
+.sidebar-menu li:hover {
+  box-shadow: 0 0 15px 3px #00b4ff;
+}
+
+/* Sidebar links */
+.sidebar-menu a {
+  text-decoration: none;
+  color: #0f0b0bb5;
+  font-size: 16px;
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on link - background, color, slide */
+.sidebar-menu li:hover a {
+  background: linear-gradient(90deg, #0078ff, #00b4ff);
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+/* Active link style */
+.sidebar-menu a.active {
+  background: linear-gradient(90deg, #00b4ff, #0078ff);
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: 0 0 15px 3px #00b4ff; /* glow around active */
+  transform: none;
+}

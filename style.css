@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#particles-js
+{
+    height: 100%;
+    background: rgb(0, 0, 0);
+    
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  z-index: -1;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  width: 300px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0094cc;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #bbb;
+  text-transform: uppercase;
+}
+
+.social-login button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-login .google {
+  background: #db4437;
+  color: #fff;
+}
+
+.social-login .google:hover {
+  background: #b63327;
+}
+
+.social-login .apple {
+  background: #000;
+  color: #fff;
+}
+
+.social-login .apple:hover {
+  background: #333;
+}
+
+.social-login .linkedin {
+  background: #0077b5;
+  color: #fff;
+}
+
+.social-login .linkedin:hover {
+  background: #005983;
+}

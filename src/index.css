@@ -1,0 +1,465 @@
+/* ========================= */
+/* RESET & GLOBAL STYLES */
+/* ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #f8f9fa;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 14px 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #0078ff, #00b4ff);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,120,255,0.4);
+}
+
+.hero-btn:hover {
+  background: linear-gradient(90deg, #005fcc, #0095cc);
+  transform: translateY(-3px);
+}
+
+/* ========================= */
+/* FEATURES SECTION */
+/* ========================= */
+.features-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ========================= */
+/* ABOUT SECTION */
+/* ========================= */
+.about-section {
+  padding: 100px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-img, .about-text {
+  flex: 1 1 45%;
+  padding: 20px;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.about-text h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ========================= */
+/* HOW IT WORKS SECTION */
+/* ========================= */
+.how-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.how-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  background: #f0f8ff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.step span {
+  display: inline-block;
+  background: #0078ff;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+}
+
+/* ========================= */
+/* COUNTERS SECTION */
+/* ========================= */
+.counters-section {
+  padding: 80px 20px;
+  background: linear-gradient(90deg, #0078ff, #00b4ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.counter-box {
+  text-align: center;
+}
+
+.counter-box h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.counter-box p {
+  font-size: 1.2rem;
+}
+
+/* ========================= */
+/* TESTIMONIALS SECTION */
+/* ========================= */
+.testimonials-section {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-box {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.testimonial-box h4 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* FAQ SECTION */
+/* ========================= */
+.faq-section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+}
+
+.faq-item h3::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: #0078ff;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ========================= */
+/* CTA FOOTER */
+/* ========================= */
+.cta-footer {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #0078ff, #00b4ff);
+  color: #fff;
+}
+
+.cta-footer h2 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.cta-btn {
+  padding: 14px 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #0078ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* AUTH FORMS (LOGIN & SIGNUP) */
+/* ========================= */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.auth-box {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.auth-form input {
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+.auth-form input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79,172,254,0.4);
+}
+
+.auth-btn {
+  margin-top: 12px;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #3a8de0;
+}
+
+.auth-options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.google-btn, .phone-btn {
+  margin: 6px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.google-btn {
+  background: #db4437;
+  color: white;
+}
+
+.google-btn:hover {
+  background: #c23321;
+}
+
+.phone-btn {
+  background: #34a853;
+  color: white;
+}
+
+.phone-btn:hover {
+  background: #248a3d;
+}
+
+.link {
+  color: #4facfe;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.fade-in {
+  animation: fadeInUp 1.2s ease;
+}
+
+.slide-up {
+  animation: fadeInUp 1.5s ease;
+}
+
+

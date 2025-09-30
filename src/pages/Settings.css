@@ -1,0 +1,71 @@
+.settings-page {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.settings-form .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.settings-form input,
+.settings-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.save-btn {
+  padding: 12px;
+  background: #4cafef;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.save-btn:hover {
+  background: #3b8edb;
+}
+
+/* 🌙 Dark Mode */
+body.dark {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark .settings-page {
+  background: #2c2c2c;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .settings-form input,
+body.dark .settings-form select {
+  background: #333;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+body.dark .save-btn {
+  background: #2196f3;
+}
+
+body.dark .save-btn:hover {
+  background: #1976d2;
+}

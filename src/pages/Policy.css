@@ -1,0 +1,25 @@
+.policy-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.policy-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0078ff;
+}
+
+.policy-container ol {
+  margin-left: 20px;
+}
+
+.policy-container li {
+  margin-bottom: 15px;
+}
+
+.policy-container p {
+  margin-bottom: 15px;
+}

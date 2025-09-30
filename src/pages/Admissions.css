@@ -1,0 +1,179 @@
+/* src/pages/Admissions.css */
+
+/* ===== Container ===== */
+.admissions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background-color: #f4f6f8;
+}
+
+/* ===== Page Title ===== */
+.admissions-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 50px;
+}
+
+/* ===== Section ===== */
+.admissions-section {
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-bottom: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admissions-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* ===== Section Titles ===== */
+.admissions-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+/* ===== Subheadings ===== */
+.admissions-section h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: #34495e;
+}
+
+/* ===== Paragraphs ===== */
+.admissions-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* ===== Lists ===== */
+.admissions-section ul {
+  list-style: disc inside;
+  margin-bottom: 20px;
+}
+
+.admissions-section li {
+  padding: 6px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== Tables ===== */
+.admissions-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.admissions-section th,
+.admissions-section td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admissions-section th {
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 600;
+}
+
+.admissions-section tr:hover {
+  background-color: #ecf6fd;
+  transition: background 0.3s ease;
+}
+
+/* ===== Links / Buttons ===== */
+.admissions-section a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admissions-section a:hover {
+  text-decoration: underline;
+}
+
+.admissions-section a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.admissions-section a.button:hover {
+  background-color: #2980b9;
+}
+
+/* ===== FAQs ===== */
+.faq-item {
+  background-color: #fdfdfd;
+  border-left: 5px solid #3498db;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.faq-item h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .admissions-container {
+    padding: 30px 15px;
+  }
+
+  .admissions-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .admissions-section h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .admissions-section {
+    padding: 20px 15px;
+  }
+
+  .admissions-section table th,
+  .admissions-section table td {
+    padding: 8px 10px;
+  }
+}
